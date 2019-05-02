@@ -35,3 +35,5 @@ Users able to create maps. Create/edit/delete pins. Maps where users contributed
 
 - Profile Page
 ![](https://github.com/romelt777/midterm-project-map/blob/master/docs/wholeProfile.png)
+![](https://github.com/romelt777/midterm-project-map/blob/master/docs/profileTop.png)
+![](https://github.com/romelt777/midterm-project-map/blob/master/docs/profileBottom.png)
