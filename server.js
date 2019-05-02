@@ -102,12 +102,10 @@ app.get('/profile', (req, res) => {
         .where('name', userLogged)
         .then((user) => {
           knex('contributors')
-          console.log("NY", user[0])
           .where('users_id', user[0].id)
           .then((map) => {
-            // console.log("ralph", map[0])
-            // whichContribute = map[0].maps_id;
-            // console.log(whichContribute);
+            whichContribute = map[0].maps_id;
+            console.log(whichContribute);
             knex('maps')
             .where('id', whichFavMap)
             .then((mapName) =>{
