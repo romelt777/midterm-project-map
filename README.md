@@ -21,3 +21,6 @@ Users able to create maps. Create/edit/delete pins. Maps where users contributed
 - knex
 - dotenv
 - node-sass-middleware
+
+## Photos of Project
+
