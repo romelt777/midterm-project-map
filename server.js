@@ -85,7 +85,7 @@ app.get('/explore', (req, res) => {
 });
 
 // app.get('/profile', (req, res) => {
-//   let templateVars = {userLogged: userLogged}; 
+//   let templateVars = {userLogged: userLogged};
 //   res.render('profile', templateVars)
 // });
 
@@ -102,10 +102,12 @@ app.get('/profile', (req, res) => {
         .where('name', userLogged)
         .then((user) => {
           knex('contributors')
+          console.log("NY", user[0])
           .where('users_id', user[0].id)
           .then((map) => {
-            whichContribute = map[0].maps_id;
-            console.log(whichContribute);
+            // console.log("ralph", map[0])
+            // whichContribute = map[0].maps_id;
+            // console.log(whichContribute);
             knex('maps')
             .where('id', whichFavMap)
             .then((mapName) =>{
@@ -126,7 +128,7 @@ app.get('/profile', (req, res) => {
                res.render('profile', templateVars)
                 })
             })
- 
+
           });
         });
     });
@@ -168,7 +170,7 @@ app.get('/map/:id', (request, respond) => {
   };
 });
 app.get('/create/createPin', (request, respond) => {
- 
+
   mapId = request.query.maps_id;
   knex('pins').insert(request.query)
   .then( function (result) {
@@ -248,7 +250,6 @@ app.get('/create/:id', (request, respond) => {
 
 
 app.post("/login", (request, respond) => {
-  console.log(request); 
   console.log("hey", request.body.username);
   userLogged = request.body.username;
   request.session.id = request.body.username
@@ -414,7 +415,7 @@ app.post('/create/', (request, respond) => {
       mapId = maps[0].id;
       console.log(maps);
       console.log("tst", mapId)
-      
+
       knex('users')
         .where('name', userLogged)
         .then((user) => {

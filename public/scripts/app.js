@@ -19,10 +19,6 @@ function deletePin(){
   event.preventDefault();
 
   for(let i = 0; i < markers.length; i++){
-    // console.log("where")
-    // console.log(lastTitle[0], lastDescription[0], lastUrl[0]);
-    // console.log(markers[i].pin.title, markers[i].pin.description, markers[i].pin.imageUrl);
-
     //uses "last" array, to see last pin clicked, then cycles through all pins aka markers and compares values, if values match delete.
 
       if(lastTitle[0] === markers[i].pin.title && lastDescription[0] === markers[i].pin.description && lastUrl[0] === markers[i].pin.imageUrl){ //set to equal dscrip, title , and url
@@ -85,11 +81,9 @@ function editPinRender(){
       location.reload();
     });;
   });
-  
-  
-  }
-  
 
+
+  }
 
 
 function editPin(){
@@ -98,8 +92,6 @@ function editPin(){
   $('#descriptionEdit').val(lastDescription[0]);
   $('#imageUrlEdit').val(lastUrl[0]);
 }
-
-
 
 
 function downloadUrl(url, callback) {

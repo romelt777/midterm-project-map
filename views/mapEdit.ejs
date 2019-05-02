@@ -12,7 +12,7 @@
         height: 80%;
         margin: 0;
         padding: 0;
-        
+
       }
       .heart {
         background-color: red;
@@ -26,7 +26,7 @@
       }
 
       .button {
-  background-color: #d73851; 
+  background-color: #d73851;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -36,7 +36,7 @@
   font-size: 16px;
   margin: 0 auto;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; 
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -65,7 +65,7 @@
   <body>
     <header><h1><%=name%></h1></header>
     <div id="map"></div>
-    
+
 
     <div id="table">
       <table>
@@ -77,20 +77,18 @@
     </div>
     <br></br>
     <form action="/edit/"  method="POST">
-      Title:<input id="titleEdit" type="text" name="title" > <br></br>
-      Description:<input id="descriptionEdit" type="text" name="description" > <br></br>
-      Image Url:<input id="imageUrlEdit" type="text" name="imageUrl"> <br></br>
-      <input type='submit' value='edit' onclick='editPinRender()'/>
+      <table>
+        <tr><td>Title:</td> <td><input id="titleEdit" type="text" name="title" > </td> </tr>
+        <tr><td>Description:</td> <td><input id="descriptionEdit" type="text" name="description" > </td> </tr>
+        <tr><td>Image Url:</td> <td><input id="imageUrlEdit" type="text" name="imageUrl"> </td> </tr>
+        <tr><td></td><td><input type='submit' value='edit' onclick='editPinRender()'/></td></tr>
     </form>
 
 
-    <div id="message">Location saved</div>
-
+<!--     <div id="message">Location saved</div>
+ -->
     <span id='heart' style="font-size:500%;color:white;" onclick='favorite()'>&hearts;</span>
 
-    <form>
-        <button formaction="/profile/" class="button button1">View Favourites ❤️</button>
-      </form>
 
 
     <script>
