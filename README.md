@@ -1,6 +1,6 @@
 # Luno Maps
 
-Web app using Google Maps API, to create custom maps with personalized  pins. 
+Users able to create maps. Create/edit/delete pins. Maps where users contributed are saved to their profile. Users are also able to favorite a map.
 
 ## Getting Started
 
