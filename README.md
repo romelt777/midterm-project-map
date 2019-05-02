@@ -24,3 +24,14 @@ Users able to create maps. Create/edit/delete pins. Maps where users contributed
 
 ## Photos of Project
 
+- Home Page
+![](https://github.com/romelt777/midterm-project-map/blob/master/docs/homepage.png)
+
+- Explore Page
+![](https://github.com/romelt777/midterm-project-map/blob/master/docs/ExplorePage.png)
+
+- Viewing Map
+![](https://github.com/romelt777/midterm-project-map/blob/master/docs/ViewMap.png)
+
+- Home Page
+![](https://github.com/romelt777/midterm-project-map/blob/master/docs/ExplorePage.png)
